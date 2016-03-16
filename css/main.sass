@@ -1,0 +1,64 @@
+/*base*/
+@import base/colors
+@import base/typography
+
+/*components*/
+@import components/form
+
+/*general*/
+*
+	padding: 0
+	margin: 0
+	
+body
+	background-color: #1b1e26
+	padding: 40px
+	
+main
+	width: 100%
+	max-width: 840px
+	margin: 0 auto
+	animation: fadein 1.5s ease-out 1
+	
+
+#brand
+	height: 50px
+	width: 50px
+	display: block
+	
+.btn
+	background: $red
+	color: $white
+	padding: 15px 30px
+	font-family: 'Montserrat', sans-serif
+	border: 0
+	border-radius: 4px
+	font-size: 0.875rem
+	text-transform: uppercase
+	text-align: center
+	text-decoration: none
+	cursor: pointer
+	display: block
+	transition: all 0.5s ease-in
+	&:hover
+		background: darken($red, 15%)
+		cursor: pointer
+	
+article
+	display: none
+	
+i.fa
+	font-size: 1.250rem
+	color: $red
+	padding-right: 15px
+	transition: all 0.5s ease-in
+	&:hover
+		color: darken($red, 15%)
+		cursor: pointer
+	
+
+@keyframes fadein
+	0%
+		opacity: 0
+	100%
+		opacity: 1

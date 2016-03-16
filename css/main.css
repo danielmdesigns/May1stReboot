@@ -1,0 +1,204 @@
+/*base*/
+/* Sass Document */
+/*colors*/
+/*typography*/
+h1 {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 36px;
+  display: inline;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #505465;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+p {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+a.text__link {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #505465;
+  text-decoration: underline;
+  display: inline;
+}
+
+a.text__link:hover {
+  font-style: italic;
+}
+
+a.text__link--red {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #f3441c;
+  text-decoration: underline;
+  display: inline;
+  transition: all 0.5s ease-in;
+}
+
+a.text__link--red:hover {
+  font-style: italic;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*components*/
+/* Sass Document */
+#contact {
+  background: transparent;
+}
+
+input, textarea {
+  color: #FFFFFF;
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #505465;
+  outline: none;
+  margin-top: 10px;
+}
+
+*::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  line-height: 14px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+*:-moz-placeholder {
+  color: #FFFFFF;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  line-height: 14px;
+  line-height: normal;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+*::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  line-height: 14px;
+  line-height: normal;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+*:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  line-height: 14px;
+  line-height: normal;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+*:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+*:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+*:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+*:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/*general*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1b1e26;
+  padding: 40px;
+}
+
+main {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  animation: fadein 1.5s ease-out 1;
+}
+
+#brand {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+.btn {
+  background: #f3441c;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  font-family: 'Montserrat', sans-serif;
+  border: 0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+  background: #b92a0a;
+  cursor: pointer;
+}
+
+article {
+  display: none;
+}
+
+i.fa {
+  font-size: 1.250rem;
+  color: #f3441c;
+  padding-right: 15px;
+  transition: all 0.5s ease-in;
+}
+
+i.fa:hover {
+  color: #b92a0a;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
