@@ -1,0 +1,49 @@
+/* Sass Document */
+*
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	font-family: sans-serif
+
+/* xs */
+body
+	background-color: #fff
+
+.grid
+	list-style: none
+	overflow: hidden
+	max-width: 76em
+	margin: 0 auto
+
+.grid li
+	position: relative
+  	display: inline-block
+	cursor: pointer
+	
+.grid li > img
+	display: block
+	max-width: 100%
+	opacity: 0.7
+
+.grid li a
+
+/* small */
+@media all and (min-width: 27em)
+	.grid li
+		width: 50%
+		float: left
+
+/* medium */
+@media all and (min-width: 40em)
+	.grid li
+	 	width: 33.3333333%
+	.grid li.wide
+		width: 66.666666%
+
+/* large */
+@media all and (min-width: 60em)
+	.grid li
+		width: 25%
+	.grid li.wide
+		width: 50%
+
