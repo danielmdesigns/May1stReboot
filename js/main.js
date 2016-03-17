@@ -7,5 +7,11 @@ $("#js-rm").on("click", function(e){
     $("article").slideToggle();
     $(this).text( $(this).text() === "Read Less" ? "Read More" : "Read Less");
 });
+
+$("img").hover(function() {
+	$(this).stop().animate({"opacity": "1"}, "slow");
+},function() {
+	$(this).stop().animate({"opacity": "0.7"}, "slow");
+});
 	
 });
