@@ -4,6 +4,7 @@
 
 /*components*/
 @import components/form
+@import components/gallery
 
 /*general*/
 *
@@ -19,7 +20,20 @@ main
 	max-width: 840px
 	margin: 0 auto
 	animation: fadein 1.5s ease-out 1
-	
+
+#brand, #about, #gallery, .grid, #skills, #footer, form, a, .btn
+	margin-bottom: 50px
+article
+	margin-top: 30px
+	padding-bottom: 1px
+p, h4
+	margin-bottom: 20px
+input[class="btn"]
+	margin-top: 20px
+	margin-bottom: 50px
+footer p
+	margin-top: 50px
+	margin-bottom: 50px
 
 #brand
 	height: 50px
@@ -43,6 +57,10 @@ main
 	&:hover
 		background: darken($red, 15%)
 		cursor: pointer
+
+@media all and (min-width: 27em)
+	.btn
+		max-width: 250px
 	
 article
 	display: none
