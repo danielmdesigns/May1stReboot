@@ -8,7 +8,7 @@ $("#js-rm").on("click", function(e){
     $(this).text( $(this).text() === "Read Less" ? "Read More" : "Read Less");
 });
 
-$(".grid li > img").hover(function() {
+$(".grid li > a > img").hover(function() {
 	$(this).stop().animate({"opacity": "1"}, "slow");
 },function() {
 	$(this).stop().animate({"opacity": "0.7"}, "slow");
