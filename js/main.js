@@ -13,5 +13,10 @@ $(".grid li > a > img").hover(function() {
 },function() {
 	$(this).stop().animate({"opacity": "0.7"}, "slow");
 });
+
+$("img").on("click", function(){
+	//alert("jQuery working");
+	$("main").load("project_temp.html");
+});
 	
 });
