@@ -2,14 +2,8 @@
 /* Sass Document */
 /*colors*/
 /*typography*/
-@font-face {
-  font-family: "AGDWM";
-  src: url("../fonts/AppleGaramond.eot");
-  src: url("../fonts/AppleGaramond.eot?#iefix") format("embedded-opentype"), url("../fonts/AppleGaramond.woff") format("woff"), url("../fonts/AppleGaramond.ttf") format("truetype"), url("../fonts/AppleGaramond.otf") format("opentype"), url("../fonts/AppleGaramond.svg") format("svg");
-}
-
 h1 {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
   font-weight: normal;
   line-height: 1.5;
@@ -26,11 +20,12 @@ h1 {
 }
 
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", arial, sans-serif;
   color: #505465;
   text-transform: uppercase;
   font-size: 0.875rem;
   display: inline;
+  letter-spacing: 3px;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   font-smooth: always;
@@ -42,12 +37,34 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.inset {
+  height: 2px;
+  width: 50px;
+  background-color: #f3441c;
+  float: none;
+  margin-top: 10px;
+}
+
+.para {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+@media all and (min-width: 40em) {
+  .inset {
+    float: left;
+  }
+  .para {
+    margin-left: 50px;
+    padding-left: 50px;
+  }
+}
+
 p {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.050rem;
   line-height: 28px;
-  letter-spacing: 0.050rem;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   font-smooth: always;
@@ -60,7 +77,7 @@ p {
 }
 
 a.text__link {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #505465;
   text-decoration: underline;
   display: inline;
@@ -68,7 +85,7 @@ a.text__link {
 }
 
 a.text__link--red {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #f3441c;
   text-decoration: underline;
   display: inline;
@@ -106,11 +123,10 @@ input, textarea {
 }
 
 *::-webkit-input-placeholder {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  letter-spacing: 0.050rem;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   font-smooth: always;
@@ -125,11 +141,10 @@ input, textarea {
 }
 
 *:-moz-placeholder {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  letter-spacing: 0.050rem;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   font-smooth: always;
@@ -144,11 +159,10 @@ input, textarea {
 }
 
 *::-moz-placeholder {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  letter-spacing: 0.050rem;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   font-smooth: always;
@@ -163,11 +177,10 @@ input, textarea {
 }
 
 *:-ms-input-placeholder {
-  font-family: "AGDWM", "EB Garamond", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  letter-spacing: 0.050rem;
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   font-smooth: always;
@@ -206,10 +219,9 @@ input, textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
-/* xs */
+/* xs (1up) */
 body {
   background-color: #fff;
 }
@@ -233,7 +245,7 @@ body {
   opacity: 0.7;
 }
 
-/* small */
+/* small (2up) */
 @media all and (min-width: 27em) {
   .grid li {
     width: 50%;
@@ -241,7 +253,7 @@ body {
   }
 }
 
-/* medium */
+/* medium (3up) */
 @media all and (min-width: 40em) {
   .grid li {
     width: 33.3333333%;
@@ -251,7 +263,7 @@ body {
   }
 }
 
-/* large */
+/* large (4up) */
 @media all and (min-width: 60em) {
   .grid li {
     width: 25%;
@@ -265,6 +277,7 @@ body {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -279,43 +292,16 @@ body {
   margin: 0 auto;
 }
 
-h4 {
-  margin-bottom: 15px;
-}
-
-section {
-  margin-bottom: 70px;
-}
-
-article {
-  margin-top: 30px;
-  padding-bottom: 1px;
-}
-
-p {
-  margin-bottom: 30px;
-}
-
-footer > p {
-  margin-bottom: 0;
-}
-
-nav {
-  margin-bottom: 60px;
-}
-
 #brand {
   height: 50px;
   width: 50px;
   display: block;
-  margin-bottom: 30px;
 }
 
 .btn {
   background: #f3441c;
   color: #FFFFFF;
   padding: 15px 30px;
-  margin: 30px 0;
   font-family: 'Montserrat', sans-serif;
   border: 0;
   border-radius: 4px;
@@ -325,6 +311,7 @@ nav {
   text-decoration: none;
   cursor: pointer;
   display: block;
+  letter-spacing: 3px;
   transition: all 0.5s ease-in;
 }
 
@@ -347,7 +334,7 @@ i.fa {
   font-size: 1.250rem;
   color: #f3441c;
   padding-right: 15px;
-  transition: all 0.5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
 i.fa:hover {
