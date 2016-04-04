@@ -17,7 +17,7 @@ body
 	padding: 40px
 	animation: fadein 1.5s ease-out 1
 	
-.container
+main
 	width: 100%
 	max-width: 840px
 	margin: 0 auto
@@ -26,6 +26,12 @@ body
 	height: 50px
 	width: 50px
 	display: block
+	margin-bottom: 40px
+	
+section
+	margin-bottom: 100px
+	&:last-of-type
+		margin-bottom: 40px
 	
 .btn
 	background: $red
@@ -40,8 +46,9 @@ body
 	text-decoration: none
 	cursor: pointer
 	display: block
-	letter-spacing: 3px
+	letter-spacing: 2px
 	transition: all 0.5s ease-in
+	margin-top: 40px
 	&:hover
 		background: darken($red, 10%)
 		cursor: pointer
@@ -52,16 +59,22 @@ body
 	
 article
 	display: none
-	
+	margin-top: 40px
+	padding: 1px 0
+
+nav
+	margin-bottom: 40px
+
 i.fa
 	font-size: 1.250rem
 	color: $red
 	padding-right: 15px
 	transition: color 0.5s ease-in
+	&:last-of-type
+		padding-right: 0
 	&:hover
 		color: darken($red, 10%)
 		cursor: pointer
-	
 
 @keyframes fadein
 	0%

@@ -2,12 +2,7 @@
 /* Sass Document */
 /*colors*/
 /*typography*/
-h1 {
-  font-family: "EB Garamond", Georgia, serif;
-  color: #FFFFFF;
-  font-weight: normal;
-  line-height: 1.5;
-  display: inline;
+* {
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   font-smooth: always;
@@ -19,22 +14,22 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-family: "EB Garamond", Georgia, serif;
+  color: #FFFFFF;
+  font-weight: normal;
+  line-height: 1.5;
+  display: inline;
+}
+
 h4 {
   font-family: "Montserrat", arial, sans-serif;
   color: #505465;
   text-transform: uppercase;
   font-size: 0.875rem;
-  display: inline;
-  letter-spacing: 3px;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
 .inset {
@@ -43,18 +38,24 @@ h4 {
   background-color: #f3441c;
   float: none;
   margin-top: 10px;
+  margin-bottom: 40px;
 }
 
-.para {
+.inset + p {
   padding-left: 0;
   margin-left: 0;
+  margin-bottom: 40px;
+}
+
+article > .inset + p {
+  margin-bottom: 0;
 }
 
 @media all and (min-width: 40em) {
   .inset {
     float: left;
   }
-  .para {
+  .inset + p {
     margin-left: 50px;
     padding-left: 50px;
   }
@@ -65,15 +66,6 @@ p {
   color: #FFFFFF;
   font-size: 1.050rem;
   line-height: 28px;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a.text__link {
@@ -286,7 +278,7 @@ body {
   animation: fadein 1.5s ease-out 1;
 }
 
-.container {
+main {
   width: 100%;
   max-width: 840px;
   margin: 0 auto;
@@ -296,6 +288,15 @@ body {
   height: 50px;
   width: 50px;
   display: block;
+  margin-bottom: 40px;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+section:last-of-type {
+  margin-bottom: 40px;
 }
 
 .btn {
@@ -311,8 +312,9 @@ body {
   text-decoration: none;
   cursor: pointer;
   display: block;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   transition: all 0.5s ease-in;
+  margin-top: 40px;
 }
 
 .btn:hover {
@@ -328,6 +330,12 @@ body {
 
 article {
   display: none;
+  margin-top: 40px;
+  padding: 1px 0;
+}
+
+nav {
+  margin-bottom: 40px;
 }
 
 i.fa {
@@ -335,6 +343,10 @@ i.fa {
   color: #f3441c;
   padding-right: 15px;
   transition: color 0.5s ease-in;
+}
+
+i.fa:last-of-type {
+  padding-right: 0;
 }
 
 i.fa:hover {
