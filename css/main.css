@@ -1,6 +1,4 @@
 /*base*/
-/* Sass Document */
-/*colors*/
 /*typography*/
 * {
   text-rendering: optimizeLegibility;
@@ -24,7 +22,7 @@ h1 {
 
 h4 {
   font-family: "Montserrat", arial, sans-serif;
-  color: #505465;
+  color: #696969;
   text-transform: uppercase;
   font-size: 0.875rem;
   display: inline-block;
@@ -35,7 +33,7 @@ h4 {
 .inset {
   height: 2px;
   width: 50px;
-  background-color: #f3441c;
+  background-color: #a38a54;
   float: none;
   margin-top: 10px;
   margin-bottom: 40px;
@@ -70,7 +68,7 @@ p {
 
 a.text__link {
   font-family: "EB Garamond", Georgia, serif;
-  color: #505465;
+  color: #696969;
   text-decoration: underline;
   display: inline;
   padding-left: 10px;
@@ -78,7 +76,7 @@ a.text__link {
 
 a.text__link--red {
   font-family: "EB Garamond", Georgia, serif;
-  color: #f3441c;
+  color: #a38a54;
   text-decoration: underline;
   display: inline;
 }
@@ -109,7 +107,7 @@ input, textarea {
   padding: 20px 0;
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid #505465;
+  border-bottom: 2px solid #696969;
   outline: none;
   margin-top: 10px;
 }
@@ -119,17 +117,6 @@ input, textarea {
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
 *:-moz-placeholder {
@@ -137,17 +124,6 @@ input, textarea {
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
 *::-moz-placeholder {
@@ -155,17 +131,6 @@ input, textarea {
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
 *:-ms-input-placeholder {
@@ -173,17 +138,6 @@ input, textarea {
   color: #FFFFFF;
   font-size: 1rem;
   line-height: 14px;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
 *:focus::-webkit-input-placeholder {
@@ -215,7 +169,7 @@ input, textarea {
 
 /* xs (1up) */
 body {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .grid {
@@ -273,7 +227,7 @@ body {
 }
 
 body {
-  background-color: #1b1e26;
+  background-color: #241f20;
   padding: 40px;
   animation: fadein 1.5s ease-out 1;
 }
@@ -300,8 +254,8 @@ section:last-of-type {
 }
 
 .btn {
-  background: #f3441c;
-  color: #FFFFFF;
+  background: #a38a54;
+  color: #241f20;
   padding: 15px 30px;
   font-family: 'Montserrat', sans-serif;
   border: 0;
@@ -318,7 +272,7 @@ section:last-of-type {
 }
 
 .btn:hover {
-  background: #d1300b;
+  background: #816e43;
   cursor: pointer;
 }
 
@@ -340,7 +294,7 @@ nav {
 
 i.fa {
   font-size: 1.250rem;
-  color: #f3441c;
+  color: #a38a54;
   padding-right: 15px;
   transition: color 0.5s ease-in;
 }
@@ -350,7 +304,7 @@ i.fa:last-of-type {
 }
 
 i.fa:hover {
-  color: #d1300b;
+  color: #816e43;
   cursor: pointer;
 }
 
