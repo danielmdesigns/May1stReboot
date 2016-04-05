@@ -65,16 +65,21 @@ article
 nav
 	margin-bottom: 40px
 
-i.fa
+
+a i.fa
 	font-size: 1.250rem
 	color: $primary
-	padding-right: 15px
 	transition: color 0.5s ease-in
-	&:last-of-type
-		padding-right: 0
+	text-decoration: none
+	margin-right: 15px
+	border: none
 	&:hover
 		color: darken($primary, 10%)
 		cursor: pointer
+
+a:-webkit-any-link, a i.fa:visited, a i.fa:hover, a i.fa:focus, a i.fa:hover, a i.fa:active
+	text-decoration: none
+	border: none
 
 @keyframes fadein
 	0%

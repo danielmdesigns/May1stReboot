@@ -292,20 +292,23 @@ nav {
   margin-bottom: 40px;
 }
 
-i.fa {
+a i.fa {
   font-size: 1.250rem;
   color: #a38a54;
-  padding-right: 15px;
   transition: color 0.5s ease-in;
+  text-decoration: none;
+  margin-right: 15px;
+  border: none;
 }
 
-i.fa:last-of-type {
-  padding-right: 0;
-}
-
-i.fa:hover {
+a i.fa:hover {
   color: #816e43;
   cursor: pointer;
+}
+
+a:-webkit-any-link, a i.fa:visited, a i.fa:hover, a i.fa:focus, a i.fa:hover, a i.fa:active {
+  text-decoration: none;
+  border: none;
 }
 
 @keyframes fadein {
