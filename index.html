@@ -20,9 +20,9 @@
 <section>
   <h1>My name is Daniel Maldonado, I’m a Product Designer anchored in the heart of Austin, Texas. I love making user-friendly digital experiences, prototyping, collaborating and just getting shit done. I’m a workhorse with an insatiable appetite for learning new things and improving upon current ones.</h1>
   <a class="text__link" id="js-rm" href="#">Read More</a>
-  <article>
+  <article class="is-hidden">
     <div class="inset"></div>
-    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui.</p>
+    <p>Off screen you’ll catch me hanging out with the fam-bam, relaxing and smiling as much as possible. Or, at the skatepark w/ my son watching him drop in on the big ramp, or listening to some tunes cranked up <em>(air drummin' to jazz, instrumental metal, classic country, and 80’s rock)</em> while drinkin’ a pilsner, or painting over hand prints in the hallway walls, or getting a mani pedi w/ the wifey cause she deserves it and I think the shark tank is cool.</p>
   </article>
   <a href="mailto:daniel@danielmdesigns.com" class="btn">Hire Me</a>
 </section>
@@ -31,7 +31,7 @@
   <h4>Selected Projects</h4>
   <div>
     <div class="inset"></div>
-    <p>Below is a small collection of some of the most recent projects I’ve had the pleasure of working on. If you wish to see more work, feel free to stop by my <a class="text__link--red" href="https://dribbble.com/danielmdesigns" target="_blank">dribbble</a>, <a class="text__link--red" href="http://codepen.io/dwmaldonado/" target="_blank">codepen</a>, <a class="text__link--red" href="https://github.com/danielmdesigns" target="_blank">github</a>, or <a class="text__link--red" href="https://www.behance.net/dwmaldonado" target="_blank">behance</a> accounts to see what I've been up to.</p>
+    <p>Below is a small collection of some of the most recent projects I’ve had the pleasure of working on. If you wish to see more work, feel free to stop by my <a class="text__link--primary" href="https://dribbble.com/danielmdesigns" target="_blank">dribbble</a>, <a class="text__link--primary" href="http://codepen.io/dwmaldonado/" target="_blank">codepen</a>, <a class="text__link--primary" href="https://github.com/danielmdesigns" target="_blank">github</a>, or <a class="text__link--primary" href="https://www.behance.net/dwmaldonado" target="_blank">b&eacute;hance</a> accounts to see what I've been up to.</p>
   </div>
   <ul class="grid">
   	<li>
@@ -81,34 +81,37 @@
   <h4>Get In Touch</h4>
   <div>
     <div class="inset"></div>
-    <p>I’m always interested in great new opportunities. Get in touch and let me know how I can be a piece to the puzzle. Don’t like filling in forms? No worries, email me directly, <a href="mailto:daniel@danielmdesigns.com" class="text__link--red">daniel@danielmdesigns.com</a></p>
+    <p>I am always interested in great new opportunities. Send me a message and let's make something together. Don’t like filling in forms? No worries, email me directly &mdash;
+ <a href="mailto:daniel@danielmdesigns.com" class="text__link--primary">daniel@danielmdesigns.com</a></p>
   </div>
   <form action="//formspree.io/daniel@danielmdesigns.com" method="POST">
     <input type="text" name="name" placeholder="Your Name">
     <input type="email" name="_replyto" placeholder="Your Email Address">
-    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="hidden" name="_subject" value="New submission!" />
+    <input type="hidden" name="_next" value="//site.io/thanks.html">
     <input class="btn" type="submit" value="Send It">
   </form>
 </section>
 
 <footer>
   <nav>
-    <a href="https://twitter.com/danielmdesigns" target="_blank">
+    <a class="is-underline" href="https://twitter.com/danielmdesigns" target="_blank">
       <i class="fa fa-twitter"></i>
     </a>
-    <a href="http://codepen.io/dwmaldonado/" target="_blank">
+    <a class="is-underline" href="http://codepen.io/dwmaldonado/" target="_blank">
       <i class="fa fa-codepen"></i>
     </a>
-    <a href="https://github.com/danielmdesigns" target="_blank">
+    <a class="is-underline" href="https://github.com/danielmdesigns" target="_blank">
       <i class="fa fa-github"></i>
     </a>
-    <a href="https://dribbble.com/danielmdesigns" target="_blank">
+    <a class="is-underline" href="https://dribbble.com/danielmdesigns" target="_blank">
       <i class="fa fa-dribbble"></i>
     </a>
-    <a href="https://www.linkedin.com/in/daniel-maldonado-53340559" target="_blank">
+    <a class="is-underline" href="https://www.linkedin.com/in/daniel-maldonado-53340559" target="_blank">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://www.behance.net/dwmaldonado" target="_blank">
+    <a class="is-underline" href="https://www.behance.net/dwmaldonado" target="_blank">
       <i class="fa fa-behance"></i>
     </a>
   </nav>
@@ -119,6 +122,8 @@
 </footer>
 
 </main>
+
+<div id="js-top" class="back-to-top slideLeft"><i class="fa fa-caret-up"></i></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/main.js"></script>
