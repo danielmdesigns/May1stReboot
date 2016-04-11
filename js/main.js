@@ -5,7 +5,7 @@ $(document).ready(function(){
 $("#js-rm").on("click", function(e){
     e.preventDefault();
     $(".is-hidden").slideToggle(800);
-    $(this).text( $(this).text() === "Read Less" ? "Read More" : "Read Less");
+    $(this).text($(this).text() === "Read Less" ? "Read More" : "Read Less");
 });
 
 $(".grid li > a > img").hover(function(){
@@ -15,14 +15,12 @@ $(".grid li > a > img").hover(function(){
 });
 
 $("#js-top").on("click", function(){
-	if(document.body.scrollTop !== 0){
-		$("html, body").animate({
-        scrollTop: $("body").offset().top
-    }, 1500);
-  		return false;
-	}else{
-		//alert("I'm already at the top bro!");
-	}
+  if($(window).scrollTop() > 0){
+	$("html, body").animate({scrollTop: 0}, 1500);
+	return false;
+  }else{
+	//alert("I'm already at the top bro!");
+  }
 });
 	
 });
