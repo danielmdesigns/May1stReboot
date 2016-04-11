@@ -6,26 +6,28 @@
 @import components/form
 @import components/gallery
 
-/*general*/
 *
-	padding: 0
-	margin: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
 	box-sizing: border-box
+	margin: 0
+	padding: 0
 	
 body
-	background-color: $black
+	height: 100%
 	padding: 40px
 	animation: fadein 1.5s ease-out 1
-	
+	background-color: $black
+	d
 main
 	width: 100%
 	max-width: 840px
 	margin: 0 auto
 
 #brand
-	height: 50px
-	width: 50px
 	display: block
+	width: 50px
+	height: 50px
 	margin-bottom: 40px
 	
 section
@@ -33,29 +35,27 @@ section
 	&:last-of-type
 		margin-bottom: 40px
 	
-.btn
-	background: $primary
-	color: $black
-	padding: 15px 30px
+.btn	
 	font-family: 'Montserrat', sans-serif
-	border: 0
-	border-radius: 4px
 	font-size: 0.875rem
-	text-transform: uppercase
+	display: block
+	margin-top: 40px
+	padding: 15px 30px
+	cursor: pointer
+	transition: all 0.5s ease-in
 	text-align: center
 	text-decoration: none
-	cursor: pointer
-	display: block
 	letter-spacing: 2px
-	transition: all 0.5s ease-in
-	margin-top: 40px
-	&:hover
-		background: darken($primary, 10%)
-		cursor: pointer
-
-@media (min-width: 27em)
-	.btn
+	text-transform: uppercase
+	color: $black
+	border: 0
+	border-radius: 4px
+	background: $primary
+	@media (min-width: 27em)
 		max-width: 250px
+	&:hover
+		cursor: pointer
+		background: darken($primary, 10%)
 	
 article
 	margin-top: 40px
@@ -65,55 +65,45 @@ article
 	display: none
 
 nav
-	margin-bottom: 40px
-	text-align: center
 	margin: 0 auto 40px
-
-@media (min-width: 27em)
-	nav
+	text-align: center
+	@media (min-width: 27em)
 		text-align: left
+
+a
+	text-decoration: none
 
 a i.fa
 	font-size: 1.250rem
-	color: $primary
+	display: inline-block
+	margin-right: 15px
 	transition: color 0.5s ease-in
 	text-decoration: none
-	margin-right: 15px
+	color: $primary
 	border: none
 	&:hover
-		color: darken($primary, 10%)
 		cursor: pointer
-
-a.is-underline:-webkit-any-link,
-a.is-underline:visited,
-a.is-underline:hover,
-a.is-underline:focus,
-a.is-underline:hover,
-a.is-underline:active
-	text-decoration: none
-	border: none
+		color: darken($primary, 10%)
 	
 .back-to-top
-	background-color: $primary
-	color: $black
-	height: 50px
-	width: 50px
-	text-align: center
 	line-height: 50px
-	border-radius: 100%
 	position: fixed
-	bottom: 20px
 	right: 20px
-	box-shadow: 0px 0px 20px darken($black, 10%)
+	bottom: 20px
+	width: 50px
+	height: 50px
 	cursor: pointer
 	transition: background-color 0.5s ease-in
+	text-align: center
+	color: $black
+	border-radius: 100%
+	background-color: $primary
+	box-shadow: 0px 0px 20px $black
+	@media(min-width: 27em)
+		right: 40px
+		bottom: 40px
 	&:hover
 		background-color: darken($primary, 10%)
-	
-@media(min-width: 27em)
-	.back-to-top
-		bottom: 40px
-		right: 40px
 
 @keyframes fadein
 	0%
@@ -122,14 +112,11 @@ a.is-underline:active
 		opacity: 1
 		
 .slideLeft
-	animation-name: slideLeft
-	-webkit-animation-name: slideLeft
-	animation-duration: 1s
-	-webkit-animation-duration: 1s
-	animation-timing-function: ease-in-out
-	-webkit-animation-timing-function: ease-in-out
 	visibility: visible !important
-
+	animation: slideLeft 1s ease-in-out
+	-webkit-animation: slideLeft 1s ease-in-out
+	-moz-animation: slideLeft 1s ease-in-out
+	
 @keyframes slideLeft
 	0%
 		transform: translateX(150%)
