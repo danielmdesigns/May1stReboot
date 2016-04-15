@@ -34,9 +34,12 @@ section
 	&:last-of-type
 		margin-bottom: 40px
 	
-.btn	
+.btn,
+.btn:visited,
+input[class="btn"],
+input[class="btn"]:visited
 	font-family: 'Montserrat', sans-serif
-	font-size: 0.875rem
+	font-size: 16px
 	display: block
 	margin-top: 40px
 	padding: 15px 30px
@@ -50,11 +53,16 @@ section
 	border: 0
 	border-radius: 4px
 	background: $primary
+	-webkit-appearance: none
 	@media (min-width: 27em)
 		max-width: 250px
-	&:hover
+	&:hover,
+	&:active,
+	&:focus
 		cursor: pointer
 		background: darken($primary, 10%)
+		outline: none
+		-webkit-appearance: none
 	
 article
 	margin-top: 40px

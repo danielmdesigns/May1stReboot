@@ -33,7 +33,7 @@ h4 {
   color: #696969;
 }
 
-.page-error {
+.lrg-intro {
   display: block;
   margin-top: -80px;
   margin-bottom: 40px;
@@ -98,12 +98,13 @@ a.text__link--primary {
 
 /*components*/
 /* Sass Document */
-input,
-textarea {
+input, input:visited, input:hover, input:active, input:focus,
+textarea, textarea:visited, textarea:hover, textarea:active, textarea:focus {
   display: block;
   width: 100%;
   margin-top: 10px;
   padding: 20px 0;
+  font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
   border: 0;
   border-bottom: 2px solid #696969;
@@ -237,9 +238,12 @@ section:last-of-type {
   margin-bottom: 40px;
 }
 
-.btn {
+.btn,
+.btn:visited,
+input[class="btn"],
+input[class="btn"]:visited {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.875rem;
+  font-size: 16px;
   display: block;
   margin-top: 40px;
   padding: 15px 30px;
@@ -253,17 +257,34 @@ section:last-of-type {
   border: 0;
   border-radius: 4px;
   background: #a38a54;
+  -webkit-appearance: none;
 }
 
 @media (min-width: 27em) {
-  .btn {
+  .btn,
+  .btn:visited,
+  input[class="btn"],
+  input[class="btn"]:visited {
     max-width: 250px;
   }
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:visited:hover,
+.btn:visited:active,
+.btn:visited:focus,
+input[class="btn"]:hover,
+input[class="btn"]:active,
+input[class="btn"]:focus,
+input[class="btn"]:visited:hover,
+input[class="btn"]:visited:active,
+input[class="btn"]:visited:focus {
   cursor: pointer;
   background: #816e43;
+  outline: none;
+  -webkit-appearance: none;
 }
 
 article {
