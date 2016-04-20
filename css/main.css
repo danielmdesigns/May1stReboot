@@ -104,6 +104,7 @@ textarea, textarea:visited, textarea:hover, textarea:active, textarea:focus {
   width: 100%;
   margin-top: 10px;
   padding: 20px 0;
+  font-size: 1rem;
   font-family: "EB Garamond", Georgia, serif;
   color: #FFFFFF;
   border: 0;
@@ -243,7 +244,7 @@ section:last-of-type {
 input[class="btn"],
 input[class="btn"]:visited {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   display: block;
   margin-top: 40px;
   padding: 15px 30px;
@@ -311,7 +312,15 @@ a {
   text-decoration: none;
 }
 
-a i.fa {
+a:active,
+a:focus {
+  outline: none;
+}
+
+a i.fa,
+a i.fa:hover,
+a i.fa:active,
+a i.fa:focus {
   font-size: 1.250rem;
   display: inline-block;
   margin-right: 15px;
@@ -319,9 +328,13 @@ a i.fa {
   text-decoration: none;
   color: #a38a54;
   border: none;
+  outline: none;
 }
 
-a i.fa:hover {
+a i.fa:hover,
+a i.fa:hover:hover,
+a i.fa:active:hover,
+a i.fa:focus:hover {
   cursor: pointer;
   color: #816e43;
 }
