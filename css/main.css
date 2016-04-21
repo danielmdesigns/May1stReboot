@@ -12,7 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h4, p, a, .error-pg-heading {
+h1, h4, p, a {
   font-family: "EB Garamond", Georgia, serif;
 }
 
@@ -90,6 +90,10 @@ a.text__link--primary:hover {
 a.text__link {
   padding-left: 10px;
   color: #696969;
+}
+
+a[id="js-rm"] {
+  line-height: 3rem;
 }
 
 a.text__link--primary {
