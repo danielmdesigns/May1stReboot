@@ -18,14 +18,14 @@ h1, h4, p, a, .error-pg-heading {
 
 h1 {
   font-weight: normal;
-  line-height: 1.5;
+  font-size: 1.75rem;
   display: inline;
   color: #FFFFFF;
 }
 
 h4 {
   font-family: "Montserrat", arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: inline-block;
   margin-bottom: 30px;
   letter-spacing: 2px;
@@ -71,7 +71,7 @@ article > .inset + p {
 }
 
 p {
-  font-size: 1.050rem;
+  font-size: 1.125rem;
   line-height: 28px;
   color: #FFFFFF;
 }
