@@ -22,7 +22,7 @@
   <h1 class="lrg-intro">404</h1>
   <article class="is-visible">
     <div class="inset"></div>
-    <p>Bummer... It appears that the page you were looking for does not exist, was typed incorrectly, is out of date, or secret and I don’t want you to have it.</p>
+    <p>Whoops! It appears that the page you were looking for does not exist, was typed incorrectly, is out of date, or it is a secret and I don’t want you to have it.</p>
   </article>
   <a href="index.html" class="btn">Return Home</a>
 </section>
