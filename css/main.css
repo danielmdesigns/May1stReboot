@@ -349,7 +349,7 @@ img {
   border: 0;
 }
 
-.i .arrow {
+img.i.arrow {
   margin-bottom: 1px;
 }
 
