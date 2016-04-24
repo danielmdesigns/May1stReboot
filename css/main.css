@@ -279,9 +279,7 @@ input[class="btn"]:visited {
   }
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus,
+.btn:hover, .btn:active, .btn:focus,
 .btn:visited:hover,
 .btn:visited:active,
 .btn:visited:focus,
@@ -321,8 +319,7 @@ a {
   text-decoration: none;
 }
 
-a:active,
-a:focus {
+a:active, a:focus {
   outline: none;
 }
 
@@ -350,6 +347,10 @@ a i.fa:focus:hover {
 
 img {
   border: 0;
+}
+
+.i .arrow {
+  margin-bottom: 1px;
 }
 
 .back-to-top {
