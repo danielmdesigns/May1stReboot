@@ -66,6 +66,7 @@ input[class="btn"]:visited
 	
 article
 	margin-top: 40px
+	margin-bottom: 10px
 	padding: 1px 0
 	
 .is-hidden
@@ -77,11 +78,13 @@ nav
 	@media (min-width: 27em)
 		text-align: left
 
-a
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus
 	text-decoration: none
-	&:active,
-	&:focus
-		outline: none
+	outline: none
 
 a i.fa,
 a i.fa:hover,
@@ -101,9 +104,6 @@ a i.fa:focus
 	
 img
 	border: 0
-	
-img.i.arrow
-	margin-bottom: 1px
 	
 .back-to-top
 	line-height: 50px

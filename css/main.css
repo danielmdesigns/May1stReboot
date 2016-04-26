@@ -18,7 +18,7 @@ h1, h4, p, a {
 
 h1 {
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   display: inline;
   color: #FFFFFF;
 }
@@ -84,7 +84,6 @@ p {
 a.text__link,
 a.text__link--primary {
   display: inline;
-  text-decoration: underline;
 }
 
 a.text__link:hover,
@@ -93,12 +92,7 @@ a.text__link--primary:hover {
 }
 
 a.text__link {
-  padding-left: 10px;
   color: #696969;
-}
-
-a[id="js-rm"] {
-  line-height: 3rem;
 }
 
 a.text__link--primary {
@@ -279,9 +273,7 @@ input[class="btn"]:visited {
   }
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus,
+.btn:hover, .btn:active, .btn:focus,
 .btn:visited:hover,
 .btn:visited:active,
 .btn:visited:focus,
@@ -299,6 +291,7 @@ input[class="btn"]:visited:focus {
 
 article {
   margin-top: 40px;
+  margin-bottom: 10px;
   padding: 1px 0;
 }
 
@@ -317,12 +310,12 @@ nav {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
+a,
+a:visited,
+a:hover,
 a:active,
 a:focus {
+  text-decoration: none;
   outline: none;
 }
 
@@ -350,10 +343,6 @@ a i.fa:focus:hover {
 
 img {
   border: 0;
-}
-
-img.i.arrow {
-  margin-bottom: 1px;
 }
 
 .back-to-top {
