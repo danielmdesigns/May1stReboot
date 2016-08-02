@@ -29,22 +29,22 @@
 
 <footer>
   <nav>
-    <a class="is-underline" href="https://twitter.com/danielmdesigns" target="_blank">
+    <a class="icon" href="https://twitter.com/danielmdesigns" target="_blank">
       <i class="fa fa-twitter"></i>
     </a>
-    <a class="is-underline" href="http://codepen.io/danielmdesigns/" target="_blank">
+    <a class="icon" href="http://codepen.io/danielmdesigns/" target="_blank">
       <i class="fa fa-codepen"></i>
     </a>
-    <a class="is-underline" href="https://github.com/danielmdesigns" target="_blank">
+    <a class="icon" href="https://github.com/danielmdesigns" target="_blank">
       <i class="fa fa-github"></i>
     </a>
-    <a class="is-underline" href="https://dribbble.com/danielmdesigns" target="_blank">
+    <a class="icon" href="https://dribbble.com/danielmdesigns" target="_blank">
       <i class="fa fa-dribbble"></i>
     </a>
-    <a class="is-underline" href="https://www.linkedin.com/in/daniel-maldonado-53340559" target="_blank">
+    <a class="icon" href="https://www.linkedin.com/in/daniel-maldonado-53340559" target="_blank">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a class="is-underline" href="https://www.behance.net/danielmdesigns" target="_blank">
+    <a class="icon" href="https://www.behance.net/danielmdesigns" target="_blank">
       <i class="fa fa-behance"></i>
     </a>
   </nav>
